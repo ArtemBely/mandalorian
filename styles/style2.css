@@ -1,0 +1,58 @@
+.main_form {
+  width: 1290px;
+  height: 634px;
+  background: cornflowerblue;
+  border-radius: 10px;
+  display: grid;
+  align-items: center;
+}
+#but {
+  width: 91px;
+  height: 49px;
+}
+.wrap_form {
+  position: relative;
+  top: -45px;
+  display: flex;
+  justify-content: center;
+}
+.start_project {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      color: white;
+      font-family: 'Inter-Bold';
+      margin: 0;
+}
+.send_form {
+  display: grid;
+  width: 410px;
+  grid-gap: 10px;
+  margin-left: 88px;
+  height: 320px;
+}
+.each_input {
+  height: 9px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+  padding: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+}
+.each_input::placeholder {
+  color: black;
+}
+#but {
+  width: 91px;
+  height: 49px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  background: transparent;
+}

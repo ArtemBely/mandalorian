@@ -1,0 +1,215 @@
+@font-face {
+	font-family: 'Montserrat-Light';
+	src: url('../fonts/Montserrat-Light.eot');
+	src: local('☺'), url('../fonts/Montserrat-Light.woff') format('woff'),
+	url('../fonts/Montserrat-Light.ttf') format('truetype'),
+	url('../fonts/Montserrat-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat-Medium';
+	src: url('../fonts/Montserrat-Medium.eot');
+	src: local('☺'), url('../fonts/Montserrat-Medium.woff') format('woff'),
+	url('../fonts/Montserrat-Medium.ttf') format('truetype'),
+	url('../fonts/Montserrat-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat-Bold';
+	src: url('../fonts/Montserrat-Bold.eot');
+	src: local('☺'), url('../fonts/Montserrat-Bold.woff') format('woff'),
+	url('../fonts/Montserrat-Bold.ttf') format('truetype'),
+	url('../fonts/Montserrat-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Inter-LightBETA';
+	src: url('../fonts/Inter-LightBETA.eot');
+	src: local('☺'), url('../fonts/Inter-LightBETA.woff') format('woff'),
+	url('../fonts/Inter-LightBETA.ttf') format('truetype'),
+	url('../fonts/Inter-LightBETA.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Inter-Regular';
+	src: url('../fonts/Inter-Regular.eot');
+	src: local('☺'), url('../fonts/Inter-Regular.woff') format('woff'),
+	url('../fonts/Inter-Regular.ttf') format('truetype'),
+	url('../fonts/Inter-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Inter-Bold';
+	src: url('../fonts/Inter-Bold.eot');
+	src: local('☺'), url('../fonts/Inter-Bold.woff') format('woff'),
+	url('../fonts/Inter-Bold.ttf') format('truetype'),
+	url('../fonts/Inter-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat-Medium';
+}
+.accorn_head {
+	width: 100%;
+	display: grid;
+}
+.wrap_accorn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: -541px;
+}
+#home {
+	width: 100%;
+	position: relative;
+	height: 100%;
+}
+.accorn {
+	width: 859px;
+	display: grid;
+	justify-content: center;
+	height: 415px;
+}
+.disign {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 120%;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+.create {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+.become {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 594px;
+  height: 105px;
+  background: #FFFFFF;
+  mix-blend-mode: overlay;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 140%;
+  text-align: center;
+  color: #325DBF;
+}
+#link_become {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.wrap_header {
+	width: 100%;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	top: -348px;
+}
+.header {
+	width: 1290px;
+	display: grid;
+  grid-template-columns: 50% 145px 135px 216px 148px;
+}
+.head_links {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	text-decoration: none;
+	font-family: 'Inter-Bold';
+	color: #000000;
+}
+.each_work {
+	width: 630px;
+}
+.works {
+	font-family: 'Montserrat-Light';
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 140%;
+	text-align: center;
+}
+.works_examples {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 30px;
+	overflow-x: scroll;
+}
+.wrap_works {
+	position: relative;
+	top: -291px;
+}
+.works_examples::-webkit-scrollbar {
+	width: 0;
+}
+.grey_fone {
+  background: linear-gradient(157.93deg, #7A7A7A 8.61%, #B6B6B6 91.08%);
+	border-radius: 10px;
+	width: 300px;
+	height: 400px;
+}
+.name_of {
+	font-family: 'Inter-Bold';
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+  margin: 0
+}
+.surname_of {
+	font-family: 'Inter-Regular';
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+  margin: 0;
+}
+.wrap_photos {
+	display: flex;
+	justify-content: center;
+}
+.photos {
+	display: grid;
+	width: 1290px;
+	grid-template-columns: repeat(4 ,1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 30px;
+	grid-gap: 15px 30px;
+}
+.drag {
+	font-family: 'Inter-Regular';
+	font-weight: 400;
+	font-size: 24px;
+	text-align: center;
+	line-height: 29px;
+}
+.team_title {
+	font-weight: 400;
+	text-align: center;
+	font-size: 40px;
+	line-height: 140%;
+	position: relative;
+	top: 16px;
+	font-family: 'Inter-LightBETA';
+}
+.wrap_team {
+	position: relative;
+	top: -176px;
+}
