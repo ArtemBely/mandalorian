@@ -22,14 +22,14 @@
 			<div class="wrap_header">
 					<div class="header">
 								<img src="" alt="">
-								<a href="#" class="head_links">Works</a>
-								<a href="#" class="head_links">Team</a>
+								<a href="#works" class="head_links">Works</a>
+								<a href="#team" class="head_links">Team</a>
 								<a href="#" class="head_links">Presentation</a>
-								<a href="#" class="head_links">Start project</a>
+								<a href="#our_form" class="head_links">Start project</a>
 					</div>
 			</div>
 			<div class="wrap_works">
-					<p class="works">Works</p>
+					<p id="works">Works</p>
 					<div class="works_examples">
 						  <img src="./images/Home.png" class="each_work"/>
 							<img src="./images/Home.png" class="each_work"/>
@@ -40,7 +40,7 @@
 			</div>
 			<div class="wrap_team">
 					 <p class="drag">Drag through our work</p>
-					 <p class="team_title">Team</p>
+					 <p id="team">Team</p>
 					 <div class="wrap_photos">
 						 <div class="photos">
 							 <div class="each_photos">
@@ -65,8 +65,8 @@
 							 </div>
 							 <div class="each_photos">
 									 <p class="grey_fone"></p>
-									 <p class="name_of">Mikhail Davydov</p>
-									 <p class="surname_of">CTO</p>
+									 <p class="name_of">Anastasiia Varlamova</p>
+									 <p class="surname_of">Front-end developer</p>
 							 </div>
 							 <div class="each_photos">
 									 <p class="grey_fone"></p>
@@ -88,18 +88,24 @@
 			</div>
 			<div class="wrap_form">
 						<div class="main_form">
-									<form class="send_form" action="index.html" method="POST" id="our_form">
+									<form id="our_form" class="send_form" >
 										<p class="start_project">Start your project</p>
-										<input type="text" name="" class="each_input" value="" placeholder="Name">
-										<input type="text" name="" class="each_input" value="" placeholder="Phone">
-										<input type="text" name="" class="each_input" value="" placeholder="Email address">
-										<input type="text" name="" class="each_input" value="" placeholder="What is it">
-										<button type="button" name="button" id="but">Send</button>
+                    <input type="hidden" name="project_name" value="Acorn">
+                    <input type="hidden" name="admin_email" value="belysevartem9@gmail.com">
+                    <input type="hidden" name="form_subject" value="Message from Acorn">
+										<input type="text" name="Name" class="each_input" placeholder="Name" required>
+										<input type="phone" name="Phone" class="each_input" placeholder="Phone" required>
+										<input type="email" name="Email" class="each_input" placeholder="Email address" required>
+										<input type="text" name="Something" class="each_input" placeholder="What is it" required>
+										<button type="submit" id="but">Send</button>
 									</form>
 						</div>
 					<div class=""></div>
 			</div>
 		</div>
-		<script type="text/javascript" src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="./scripts/script1.js"></script>
 	</body>
 </html>

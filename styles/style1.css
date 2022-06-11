@@ -133,6 +133,9 @@ body {
   line-height: 140%;
   text-align: center;
   color: #325DBF;
+	-webkit-transition: 0.2s;
+		-o-transition: 0.2s;
+		transition: 0.2s;
 }
 #link_become {
   text-decoration: none;
@@ -140,8 +143,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+     -ms-flex-pack: center;
+   justify-content: center;
+}
+.become:hover {
+	-webkit-transform: scale(1.01);
+	    -ms-transform: scale(1.01);
+	        transform: scale(1.01);
 }
 .wrap_header {
 	width: 100%;
@@ -172,7 +180,7 @@ body {
 .each_work {
 	width: 630px;
 }
-.works {
+#works {
 	font-family: 'Montserrat-Light';
 	font-weight: 400;
 	font-size: 40px;
@@ -273,7 +281,7 @@ body {
 	text-align: center;
 	line-height: 29px;
 }
-.team_title {
+#team {
 	font-weight: 400;
 	text-align: center;
 	font-size: 40px;
