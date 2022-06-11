@@ -3,8 +3,11 @@
   height: 634px;
   background: cornflowerblue;
   border-radius: 10px;
+  display: -ms-grid;
   display: grid;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #but {
   width: 91px;
@@ -13,8 +16,12 @@
 .wrap_form {
   position: relative;
   top: -45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .start_project {
       font-weight: 700;
@@ -25,6 +32,7 @@
       margin: 0;
 }
 .send_form {
+  display: -ms-grid;
   display: grid;
   width: 410px;
   grid-gap: 10px;
@@ -40,6 +48,18 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  color: black;
+}
+.each_input::-webkit-input-placeholder {
+  color: black;
+}
+.each_input::-moz-placeholder {
+  color: black;
+}
+.each_input:-ms-input-placeholder {
+  color: black;
+}
+.each_input::-ms-input-placeholder {
   color: black;
 }
 .each_input::placeholder {

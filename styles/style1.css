@@ -1,57 +1,64 @@
 @font-face {
-	font-family: 'Montserrat-Light';
-	src: url('../fonts/Montserrat-Light.eot');
-	src: local('☺'), url('../fonts/Montserrat-Light.woff') format('woff'),
-	url('../fonts/Montserrat-Light.ttf') format('truetype'),
-	url('../fonts/Montserrat-Light.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Montserrat-Light';
+    font-display: swap;
+    src: url('../fonts/Montserrat-Light.eot');
+    src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Light.woff') format('woff'),
+    url('../fonts/Montserrat-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-	font-family: 'Montserrat-Medium';
-	src: url('../fonts/Montserrat-Medium.eot');
-	src: local('☺'), url('../fonts/Montserrat-Medium.woff') format('woff'),
-	url('../fonts/Montserrat-Medium.ttf') format('truetype'),
-	url('../fonts/Montserrat-Medium.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Montserrat-Medium';
+    font-display: swap;
+    src: url('../fonts/Montserrat-Medium.eot');
+    src: url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Medium.woff') format('woff'),
+    url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-	font-family: 'Montserrat-Bold';
-	src: url('../fonts/Montserrat-Bold.eot');
-	src: local('☺'), url('../fonts/Montserrat-Bold.woff') format('woff'),
-	url('../fonts/Montserrat-Bold.ttf') format('truetype'),
-	url('../fonts/Montserrat-Bold.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Montserrat-Bold';
+    font-display: swap;
+    src: url('../fonts/Montserrat-Bold.eot');
+    src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Bold.woff') format('woff'),
+    url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-	font-family: 'Inter-LightBETA';
-	src: url('../fonts/Inter-LightBETA.eot');
-	src: local('☺'), url('../fonts/Inter-LightBETA.woff') format('woff'),
-	url('../fonts/Inter-LightBETA.ttf') format('truetype'),
-	url('../fonts/Inter-LightBETA.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Inter-LightBETA';
+    font-display: swap;
+    src: url('../fonts/Inter-LightBETA.eot');
+    src: url('../fonts/Inter-LightBETA.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Inter-LightBETA.woff') format('woff'),
+    url('../fonts/Inter-LightBETA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-	font-family: 'Inter-Regular';
-	src: url('../fonts/Inter-Regular.eot');
-	src: local('☺'), url('../fonts/Inter-Regular.woff') format('woff'),
-	url('../fonts/Inter-Regular.ttf') format('truetype'),
-	url('../fonts/Inter-Regular.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Inter-Regular';
+    font-display: swap;
+    src: url('../fonts/Inter-Regular.eot');
+    src: url('../fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Inter-Regular.woff') format('woff'),
+    url('../fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-	font-family: 'Inter-Bold';
-	src: url('../fonts/Inter-Bold.eot');
-	src: local('☺'), url('../fonts/Inter-Bold.woff') format('woff'),
-	url('../fonts/Inter-Bold.ttf') format('truetype'),
-	url('../fonts/Inter-Bold.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Inter-Bold';
+    font-display: swap;
+    src: url('../fonts/Inter-Bold.eot');
+    src: url('../fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Inter-Bold.woff') format('woff'),
+    url('../fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
 html {
 	scroll-behavior: smooth;
 }
@@ -62,12 +69,17 @@ body {
 }
 .accorn_head {
 	width: 100%;
-	display: grid;
 }
 .wrap_accorn {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	position: relative;
 	top: -541px;
 }
@@ -78,8 +90,11 @@ body {
 }
 .accorn {
 	width: 859px;
+	display: -ms-grid;
 	display: grid;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	height: 415px;
 }
 .disign {
@@ -99,9 +114,15 @@ body {
   margin: 0;
 }
 .become {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 594px;
   height: 105px;
   background: #FFFFFF;
@@ -115,20 +136,30 @@ body {
 }
 #link_become {
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .wrap_header {
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	position: relative;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	top: -348px;
 }
 .header {
 	width: 1290px;
+	display: -ms-grid;
 	display: grid;
-  grid-template-columns: 50% 145px 135px 216px 148px;
+	-ms-grid-columns: 49% 145px 135px 218px 162px;
+	grid-template-columns: 49% 145px 135px 218px 162px;
 }
 .head_links {
 	font-weight: 700;
@@ -149,7 +180,9 @@ body {
 	text-align: center;
 }
 .works_examples {
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr;
 	grid-template-columns: repeat(5, 1fr);
 	grid-gap: 30px;
 	overflow-x: scroll;
@@ -162,6 +195,7 @@ body {
 	width: 0;
 }
 .grey_fone {
+  background: -o-linear-gradient(292.07deg, #7A7A7A 8.61%, #B6B6B6 91.08%);
   background: linear-gradient(157.93deg, #7A7A7A 8.61%, #B6B6B6 91.08%);
 	border-radius: 10px;
 	width: 300px;
@@ -182,16 +216,55 @@ body {
   margin: 0;
 }
 .wrap_photos {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .photos {
+	display: -ms-grid;
 	display: grid;
 	width: 1290px;
+	-ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
 	grid-template-columns: repeat(4 ,1fr);
+	-ms-grid-rows: 1fr 15px 1fr;
 	grid-template-rows: repeat(2, 1fr);
 	grid-gap: 30px;
 	grid-gap: 15px 30px;
+}
+.photos > *:nth-child(1) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+}
+.photos > *:nth-child(2) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 3;
+}
+.photos > *:nth-child(3) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 5;
+}
+.photos > *:nth-child(4) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 7;
+}
+.photos > *:nth-child(5) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 1;
+}
+.photos > *:nth-child(6) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 3;
+}
+.photos > *:nth-child(7) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 5;
+}
+.photos > *:nth-child(8) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 7;
 }
 .drag {
 	font-family: 'Inter-Regular';
