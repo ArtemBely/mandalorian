@@ -1,0 +1,36 @@
+  @media (min-width: 576px) and (max-width: 1700px) {
+        .disign {
+          font-size: 44px;
+          position: relative;
+          top: 29px;
+    }
+        .create {
+          font-size: 27px;
+    }
+        .become {
+          width: 494px;
+          position: relative;
+          top: -43px;
+          height: 81px;
+          font-weight: 400;
+          font-size: 26px;
+    }
+          .wrap_accorn {
+            position: relative;
+            top: -405px;
+      }
+}
+@media (min-width: 930px) and (max-width: 1320px) {
+    body {
+        -moz-transform: scale(0.7, 0.7); /* Moz-browsers */
+        zoom: 0.7; /* Other non-webkit browsers */
+        zoom: 70%; /* Webkit browsers */
+    }
+}
+@media (min-width: 720px) and (max-width: 930px) {
+    body {
+        -moz-transform: scale(0.54, 0.54); /* Moz-browsers */
+        zoom: 0.54; /* Other non-webkit browsers */
+        zoom: 54%; /* Webkit browsers */
+    }
+}
