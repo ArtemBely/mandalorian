@@ -69,6 +69,9 @@ body {
 }
 .accorn_head {
 	width: 100%;
+	/*height: 1080px;
+	background-image:linear-gradient(rgba(0, 133, 255, .2),rgba(167, 136, 255, 1)), url(../images/unsplash_Oz2ZQ2j8We8.png);
+	mix-blend-mode: hue;*/
 }
 .wrap_accorn {
 	display: -webkit-box;
@@ -81,12 +84,15 @@ body {
 	    -ms-flex-align: center;
 	        align-items: center;
 	position: relative;
-	top: -541px;
+	top: -405px;
 }
-#home {
+#home{
 	width: 100%;
 	position: relative;
 	height: 100%;
+}
+#home2{
+	display: none;
 }
 .accorn {
 	width: 859px;
@@ -161,13 +167,17 @@ body {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	top: -348px;
+	overflow: hidden;
 }
 .header {
 	width: 1290px;
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: 49% 145px 135px 218px 162px;
-	grid-template-columns: 49% 145px 135px 218px 162px;
+	grid-template-columns: 110px 620px;
+	grid-column-gap: 600px;
+}
+.menu_body{
+	display: flex;
 }
 .head_links {
 	font-weight: 700;
@@ -176,9 +186,14 @@ body {
 	text-decoration: none;
 	font-family: 'Inter-Bold';
 	color: #000000;
+	padding-right: 40px;
+}
+.menu_icon{
+	display: none;
 }
 .each_work {
 	width: 630px;
+	height: 400px;
 }
 #works {
 	font-family: 'Montserrat-Light';
@@ -280,6 +295,9 @@ body {
 	font-size: 24px;
 	text-align: center;
 	line-height: 29px;
+	margin: 20px 0 0 0;
+	position: relative;
+	top: -120px;
 }
 #team {
 	font-weight: 400;

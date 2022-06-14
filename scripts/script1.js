@@ -21,3 +21,21 @@ $(document).ready(function() {
 		return false;
 	});
 });
+
+/*burger menu*/
+const iconMenu = document.querySelector('.menu_icon');
+const menuBody = document.querySelector('.menu_body');
+if (iconMenu) {
+	const menuBody = document.querySelector('.menu_body');
+	iconMenu.addEventListener("click", function(e){
+		document.body.classList.toggle('_lock');
+		iconMenu.classList.toggle('_active');
+		menuBody.classList.toggle('_active');
+	});
+}
+
+/*if (iconMenu.classList.contains('_active')) {
+	document.body.classList.remove('_lock');
+	iconMenu.classList.remove('_active');
+	menuBody.classList.remove('_active');
+}*/

@@ -1,8 +1,10 @@
 .main_form {
   width: 1290px;
   height: 634px;
-  background: cornflowerblue;
+  background: url(../images/unsplash_nY14Fs8pxT8.png);
   border-radius: 10px;
+  grid-template-columns: 503px 110px;
+  grid-column-gap: 580px;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -75,6 +77,11 @@
   border: 1px solid #FFFFFF;
   border-radius: 10px;
   background: transparent;
+}
+.wrap_form_logo{
+	grid-column: 2/3;
+	position: relative;
+	top: -130px;
 }
 .wrap_post {
   width: 100%;

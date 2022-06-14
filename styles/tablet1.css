@@ -6,11 +6,13 @@
     }
         .create {
           font-size: 27px;
+			 top: 30px;
+			 position: relative;
     }
         .become {
           width: 494px;
           position: relative;
-          top: -43px;
+          top: 20px;
           height: 81px;
           font-weight: 400;
           font-size: 26px;
