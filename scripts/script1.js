@@ -36,8 +36,49 @@ if (iconMenu) {
 	});
 }
 
-/*if (iconMenu.classList.contains('_active')) {
-	document.body.classList.remove('_lock');
-	iconMenu.classList.remove('_active');
-	menuBody.classList.remove('_active');
-}*/
+let isDown = false;
+let startX;
+let scrollLeft;
+
+const scrollBar = document.querySelector('.works_examples');
+const wrapWorks = document.querySelector('.wrap_works');
+
+scrollBar.addEventListener('mousedown', (e) => {
+  isDown = true;
+  scrollBar.classList.add('active');
+  startX = e.pageX - scrollBar.offsetLeft;
+  scrollLeft = scrollBar.scrollLeft;
+});
+scrollBar.addEventListener('mouseleave', () => {
+  isDown = false;
+  scrollBar.classList.remove('active');
+});
+scrollBar.addEventListener('mouseup', () => {
+  isDown = false;
+  scrollBar.classList.remove('active');
+});
+scrollBar.addEventListener('mousemove', (e) => {
+  if(!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - scrollBar.offsetLeft;
+  const walk = (x - startX) * 3; //scroll-fast
+  scrollBar.scrollLeft = scrollLeft - walk;
+});
+/*
+wrapWorks.addEventListener('mousedown', (e) => {
+	isDown = true;
+	//scrollBar.style.transform = `translateX(${e.clientX}px)`;
+	console.log(e.clientX);
+});
+wrapWorks.addEventListener('mouseup', (e) => {
+	isDown = false;
+	//scrollBar.style.transform = `translateX(${e.clientX}px)`;
+	console.log(e.clientX);
+});
+wrapWorks.addEventListener('mousemove', (e) => {
+	isDown ?
+	scrollBar.style.transform = `translateX(${e.clientX}px)` :
+	null;
+	//console.log(e.clientX);
+});
+*/
