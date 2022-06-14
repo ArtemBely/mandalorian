@@ -23,14 +23,16 @@ $(document).ready(function() {
 });
 
 /*burger menu*/
-const iconMenu = document.querySelector('.menu_icon');
+const iconMenu = document.querySelector('#menu_icon');
+const closeElement = document.querySelector('.close_element');
 const menuBody = document.querySelector('.menu_body');
 if (iconMenu) {
 	const menuBody = document.querySelector('.menu_body');
 	iconMenu.addEventListener("click", function(e){
-		document.body.classList.toggle('_lock');
-		iconMenu.classList.toggle('_active');
-		menuBody.classList.toggle('_active');
+		menuBody.classList.add('_active');
+	});
+	closeElement.addEventListener("click", function(e){
+		menuBody.classList.remove('_active');
 	});
 }
 

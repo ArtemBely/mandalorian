@@ -1,13 +1,17 @@
   @media (min-width: 576px) and (max-width: 1700px) {
         .disign {
-          font-size: 44px;
+          font-size: 40px;
           position: relative;
           top: 29px;
     }
         .create {
-          font-size: 27px;
-			 top: 30px;
-			 position: relative;
+              font-size: 27px;
+              top: -6px;
+              position: relative;
+    }
+    #link_become {
+      position: relative;
+      top: -80px;
     }
         .become {
           width: 494px;
@@ -19,9 +23,28 @@
     }
           .wrap_accorn {
             position: relative;
-            top: -405px;
+            top: -361px;
       }
 }
+
+@media (min-width: 576px) and (max-width: 720px) {
+    .disign {
+      left: 0 !important;
+      width: 368px !important;
+      top: -73px !important;
+    }
+    .create {
+      top: -78px !important;
+      width: 363px !important;
+    }
+    #link_become {
+      top: -103px !important;
+    }
+    .wrap_accorn {
+      top: -347px !important;
+    }
+}
+
 @media (min-width: 930px) and (max-width: 1320px) {
     body {
         -moz-transform: scale(0.7, 0.7); /* Moz-browsers */

@@ -51,6 +51,7 @@
   font-size: 18px;
   line-height: 21px;
   color: black;
+  width: 370px;
 }
 .each_input::-webkit-input-placeholder {
   color: black;

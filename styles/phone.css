@@ -8,10 +8,9 @@
 	#home2{
 		display: block;
 		width: 100%;
-		height: 676px;
 	}
 	.wrap_accorn{
-		top: -303px;
+    top: -347px;
 	}
 	.accorn{
 		width: 290px;
@@ -20,7 +19,7 @@
 	.disign {
 		font-size: 30px;
 		line-height: 36px;
-		width: 238px;
+		width: 241px;
 		left: 25px;
 		position: relative;
 	 }
@@ -52,7 +51,7 @@
 	.header_logo{
 		width: 80px;
 	}
-	.menu_icon{
+	#menu_icon{
 		z-index: 5;
 		display: block;
 		position: relative;
@@ -60,7 +59,7 @@
 		height: 9px;
 		cursor: pointer;
 	}
-	.menu_icon span{
+	#menu_icon span{
 		left: 0;
 		position: absolute;
 		height: 3px;
@@ -70,7 +69,7 @@
 		transition: all 0.3s ease 0s;
 		background: #454545;
 	}
-	.menu_icon::after{
+	#menu_icon::after{
 		content: "";
 		left: 0;
 		position: absolute;
@@ -82,13 +81,13 @@
 		background: #454545;
 		top: 6px;
 	}
-	.menu_icon._active span{
+	#menu_icon._active span{
 		top: 50%;
 		-webkit-transform: rotate(-45deg) translate(0px, -50%);
 		    -ms-transform: rotate(-45deg) translate(0px, -50%);
 		        transform: rotate(-45deg) translate(0px, -50%);
 	}
-	.menu_icon._active::after{
+	#menu_icon._active::after{
 		width: 15px;
 		top: 30%;
 		-webkit-transform: rotate(45deg) translate(0px, 50%);
@@ -100,25 +99,26 @@
 		position: fixed;
 		top: 80px;
 		left: -130%;
-		width: 100%;
-		height: 175px;
+		width: 213px;
+		height: 200px;
+	  border-radius: 10px;
 		background-color: #FFFFFF;
 		padding: 40px 30px 30px 20px;
 		transition: left 0.3s ease 0s;
 		-webkit-transition: left 0.3s ease 0s;
 		-o-transition: left 0.3s ease 0s;
-		overflow: auto;
+		overflow: hidden;
 		z-index: 10;
 	}
+
 	.menu_body._active{
 		left: 0;
 	}
-	body._lock{
-		overflow: hidden;
-	}
+
 	.head_links{
 		margin: 0 0 20px 0;
 		display: block;
+		font-size: 18px;
 	}
 	 #works, #team  {
 		font-size: 18px;
@@ -217,6 +217,7 @@
 		font-size: 14px;
 		line-height: 16px;
 		border-radius: 5px;
+		width: 210px;
 	 }
 	 #but {
 		width: 82px;
@@ -246,7 +247,33 @@
 		grid-template-columns: 127px 112px 51px;
 	 }
 	 .privacy, .mail_to {
-		font-size: 14px;
-		line-height: 17px;
+			font-size: 14px;
+			line-height: 17px;
+	 }
+	 .wrap_header {
+		 	overflow: visible;
+	 }
+	 #left, #right {
+		  background: #454545;
+			width: 15px;
+			height: 3px;
+	 }
+	 #left {
+		 -webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+	 }
+	 #right {
+		 position: relative;
+  	 top: -19px;
+		 -webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+				 transform: rotate(45deg);
+	 }
+	 .close_element {
+		 position: relative;
+     top: -186px;
+     left: 201px;
+     width: 15px;
 	 }
 }
